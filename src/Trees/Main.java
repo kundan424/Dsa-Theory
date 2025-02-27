@@ -11,10 +11,11 @@ public class  Main {
 //        binaryTree.preOrder();
 
 
-        BST bst = new BST();
-        int [] nums = { 20 , 13 , 8 , 15, 22 };
-        bst.populate(nums);
-        bst.display();
+       AVL tree = new AVL();
+       for (int i= 0 ; i < 10; i++){
+           tree.insert(i);
+       }
+        System.out.println(tree.height());
     }
 
 
